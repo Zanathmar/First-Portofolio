@@ -1,0 +1,249 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px;
+}
+
+.intro-text {
+    flex: 1;
+    min-width: 280px;
+    padding-right: 20px;
+}
+
+.intro-text h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    background: linear-gradient(170deg, rgb(25, 0, 255), rgb(255, 0, 0)); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: transform 0.3s ease;
+}
+.intro-text h1:hover {
+    transform: translateY(-8px);
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.2);
+}
+
+.intro-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.intro-image img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-image img:hover {
+    transform: scale(1.11);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#projects {
+    padding: 60px 30px;
+    background-color: #2a2a2a;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project img {
+    border-radius: 9px;
+}
+
+.project {
+    background-color: #333;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    flex: 0 0 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.project p {
+    font-size: 1em;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#contact {
+    padding: 60px 30px;
+    background-color: #1a1a1a;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input[type="text"], form input[type="email"] {
+    height: 40px;
+}
+
+form textarea {
+    resize: none;
+}
+
+.cta-button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos img {
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text, .intro-image {
+        padding: 20px 0;
+    }
+
+    .cta-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project {
+        flex: 0 0 80%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
