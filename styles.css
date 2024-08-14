@@ -121,6 +121,7 @@ nav ul li a:hover {
 }
 .project img {
     border-radius: 9px;
+    width: 100px;
 }
 
 .project {
