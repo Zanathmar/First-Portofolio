@@ -132,6 +132,9 @@ nav ul li a:hover {
     flex: 0 0 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+a {
+    color: #007bff;
+}
 
 .project h3 {
     font-size: 1.5em;
